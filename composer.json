@@ -1,0 +1,42 @@
+{
+  "name": "polyglot/template-provider-memory",
+  "type": "library",
+  "description": "PHP Polyglot memory template provider",
+  "keywords": ["polyglot", "template-provider"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ivan Dudarev",
+      "email": "ivan@ddrv.ru",
+      "homepage": "https://ddrv.ru"
+    }
+  ],
+  "require": {
+    "php": "^7.4 || ^8.0",
+    "ext-mbstring": "*",
+    "polyglot/contract-template-provider": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.5 || ^7.5 || 8.5 || 9.5",
+    "squizlabs/php_codesniffer": "^3.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "Polyglot\\MemoryTemplateProvider\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "TestUnits\\Polyglot\\MemoryTemplateProvider\\": "tests/unit/"
+    }
+  },
+  "provide": {
+    "polyglot/contract-template-provider-implementation": "1.0"
+  },
+  "funding": [
+    {
+      "type": "other",
+      "url": "https://donation.ddrv.ru"
+    }
+  ]
+}
